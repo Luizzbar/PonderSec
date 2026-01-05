@@ -159,13 +159,21 @@
         <div class="title">Escolha uma Ação</div>
 
         <div class="options">
-            <button class="option-btn" >Realizar Avaliação</button>
-            <button class="option-btn" >Ver Resultados</button>
-            <button class="option-btn" >Sair</button>
-        <footer class="footer">
-            PonderSEC © 2025 — Segurança Ofensiva
-        </footer>
-    </div>
+            <a href="{% url 'iniciar_chat' %}" style="text-decoration: none; width: 100%;">
+                <button class="option-btn">Realizar Avaliação</button>
+            </a>
 
+            <a href="{% url 'tela_inicial' %}" style="text-decoration: none; width: 100%;">
+                <button class="option-btn">Ver Resultados</button>
+            </a>
+            
+            <a href="{% url 'tela_inicial' %}" style="text-decoration: none; width: 100%;">
+                <button class="option-btn">Logout</button>
+            </a>
+            <footer class="footer">
+                PonderSEC © 2025 — Segurança Ofensiva
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

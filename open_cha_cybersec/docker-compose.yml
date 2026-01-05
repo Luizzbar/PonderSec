@@ -1,0 +1,9 @@
+services:
+  app:
+    environment:
+      - GEMINI_API_KEY=AIzaSyDwha7XS5B_7wxfYpLYf64ZWloYLgxvAqE
+    build: .
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python3.11 app.py
